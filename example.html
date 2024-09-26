@@ -1,0 +1,24 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>string-marker.js example!</title>
+</head>
+	<style type="text/css">
+		.mark-userurl {
+			color: blue;
+			font-weight: bold;
+		}
+
+		.mark-link {
+			color: green;
+			text-decoration: underline;
+		}
+	</style>
+<body></body>
+	<script type="text/javascript" src="string-marker.js"></script>
+	<script type="text/javascript">
+		const text = "Hello @user! Check out this link: https://example.com.";
+		const parsedElement = parseString(text);
+		document.body.appendChild(parsedElement);	
+	</script>
+</html>
